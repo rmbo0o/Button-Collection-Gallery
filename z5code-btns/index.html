@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Advanced Buttons</div>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle" checked>
+                <span class="slider">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </span>
+            </label>
+        </div>
+
+        <div class="cards-grid" id="cards-container"></div>
+
+      
+    </div>
+
+    <div class="modal" id="code-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Advanced Button</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-tabs">
+                <div class="tab active" data-tab="preview">Preview</div>
+                <div class="tab" data-tab="html">HTML</div>
+                <div class="tab" data-tab="css">CSS</div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="preview-tab">
+                    <div class="button-preview" id="button-preview">
+                        <button class="btn-1">Button</button>
+                    </div>
+                </div>
+                <div class="tab-pane" id="html-tab">
+                    <div class="code-container">
+                        <button class="copy-btn" data-target="html-code"><i class="fas fa-copy"></i> Copy</button>
+                        <div class="code-block">
+                            <div class="line-numbers"></div>
+                            <pre><code id="html-code" class="language-html"></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="css-tab">
+                    <div class="code-container">
+                        <button class="copy-btn" data-target="css-code"><i class="fas fa-copy"></i> Copy</button>
+                        <div class="code-block">
+                            <div class="line-numbers"></div>
+                            <pre><code id="css-code" class="language-css"></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
